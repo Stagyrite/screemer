@@ -11,8 +11,6 @@ RUN \
 	/streem/bin/streem monsters.strm && \
 	/streem/bin/streem princes.strm && \
 	/streem/bin/streem languageVersions.strm && \
-	/streem/bin/streem translations.strm && \
-	/streem/bin/streem translations.strm && \
 	/streem/bin/streem contacts.strm && \
 	/streem/bin/streem certification.strm
 
