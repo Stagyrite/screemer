@@ -1,5 +1,6 @@
 # speakingstreem
-🎌 speaking Streem
+
+I speak [Streem](https://github.com/matz/streem "matz/streem: prototype of stream based programming language"), a prototype of a stream-based programming language.
 
 ## build
 
