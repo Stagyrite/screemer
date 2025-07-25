@@ -1,0 +1,13 @@
+identity = { x -> x } # λ𝑥.𝑥
+hell = ["Belial", "Leviathan", "Lucifer", "Satan"]
+list = seq(length(hell)) & hell
+list | flatmap(identity) | stdout
+# Output:
+# 1
+# Belial
+# 2
+# Leviathan
+# 3
+# Lucifer
+# 4
+# Satan

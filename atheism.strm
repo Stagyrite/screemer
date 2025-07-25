@@ -1,0 +1,18 @@
+# Input: fatalist
+
+switch = map { x ->
+
+	if (x == "optimist") {
+		"☀️ theist"
+	} else if (x == "pessimist") {
+		"🌒 agnostic"
+	} else if (x == "fatalist") {
+		"⚛️ atheist"
+	} else {
+		"❌ " + x
+	}
+
+}
+
+stdin | switch | stdout
+# Output: ⚛️ atheist

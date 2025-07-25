@@ -1,0 +1,9 @@
+# Input: agnosticism,atheism,theism
+
+flatmap_hd = flatmap {
+    case [] -> []
+    case [x, *y] -> [x]
+}
+map_split = map { x -> split(x, ",") }
+stdin | map_split | flatmap_hd | stdout
+# Output: agnosticism

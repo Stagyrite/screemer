@@ -1,0 +1,20 @@
+db = kvs()
+db.put("Milcom", "Ammonite devil")
+db.put("Moloch", "Phoenician and Canaanite devil")
+db.put("Nija", "Polish god of the underworld")
+db.put("Sekhmet", "Egyptian goddess of vengeance")
+db.put("Set", "Egyptian devil")
+db.put("Typhon", "Greek personification of Satan")
+
+describe = (key) -> {
+        value = db.get(key)
+        key + " - " + value
+}
+
+keys = ["Moloch", "Nija", "Sekhmet", "Typhon"]
+keys | describe | stdout
+# Output:
+# Moloch - Phoenician and Canaanite devil
+# Nija - Polish god of the underworld
+# Sekhmet - Egyptian goddess of vengeance
+# Typhon - Greek personification of Satan
