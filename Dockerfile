@@ -13,4 +13,6 @@ RUN \
 	/streem/bin/streem languageVersions.strm && \
 	/streem/bin/streem translations.strm && \
 	/streem/bin/streem translations.strm && \
-	/streem/bin/streem contacts.strm
+	/streem/bin/streem contacts.strm && \
+	/streem/bin/streem certification.strm
+
