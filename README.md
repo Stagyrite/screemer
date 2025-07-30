@@ -2,9 +2,11 @@
 
 I speak [Streem](https://github.com/matz/streem "matz/streem: prototype of stream based programming language"), a prototype of a stream-based programming language. Screemer is mainly a beginning of something that should end as a Streem documentation project. 
 
-## Speaking Streem
+## Examples
 
-### ./streem *.strm
+### Speaking Streem
+
+#### ./streem *.strm
 
 Run the examples with Docker.
 
