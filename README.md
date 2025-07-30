@@ -10,203 +10,203 @@ cd speakingstreem
 docker build --tag 'speakingstreem' .
 ```
 
-# Math
+# Math Library
 
-Streem has a lot of Mathematical functions defined by the C standard.
+Streem includes a wide range of mathematical functions, inspired by those available in the C standard library.
 
 ## Constants
 
 ### PI
 
-The mathematical constant π = 3.141592…, to available precision.
+Represents the mathematical constant π, accurate to the platform's precision.
 
-```
+```ruby
 # Output: 3.1415926353898
 print(PI)
 ```
 
 ### E
 
-The mathematical constant e = 2.718281…, to available precision.
+Represents Euler's number, *e*, used in many exponential and logarithmic calculations.
 
-```
+```ruby
 # Output: 2.718281828459
 print(E)
 ```
 
-## Number-theoretic and representation functions
+## Number-Theoretic and Numeric Functions
 
 ### ceil(x)
 
-Return the ceiling of x.
+Returns the smallest integer not less than `x`.
 
-```
+```ruby
 # Output: 46
 print(ceil(45.54))
 ```
 
 ### fabs(x)
 
-Return the absolute value of x.
+Returns the non-negative value of `x`.
 
-```
+```ruby
 # Output: 2
 print(fabs(-2))
 ```
 
 ### gcd(x, y)
 
-Return the greatest common divisor of the x and y. Note x and y must be integers.
+Computes the largest whole number that divides both `x` and `y`. Inputs must be integers.
 
-```
-Output: 2
+```ruby
+# Output: 2
 print(gcd(4,10))
 ```
 
 ### trunc(x)
 
-Return the Real value x truncated to an Integral.
+Cuts off the decimal part of `x`, leaving just the integer component.
 
-```
-Output: 9
+```ruby
+# Output: 9
 print(trunc(9.13))
 ```
 
 ### int(x)
 
-Same as trunc(x).
+Alias for `trunc(x)` — returns the integer part of a number.
 
 ### floor(x)
 
-Return the floor of x.
+Returns the greatest integer less than or equal to `x`.
 
-```
+```ruby
 # Output: 2
 print(floor(2.7))
 ```
 
 ### round(x)
 
-Return the rounding of x.
+Rounds `x` to the nearest integer.
 
-```
+```ruby
 # Output: 10
 print(round(9.76))
 ```
 
 ### frexp(x, y)
 
-Decompose x into mantissa and exponent. y is the exponent.
+Breaks down `x` into a normalized fraction and an exponent. The exponent is stored in `y`.
 
-```
+```ruby
 # Output: 0.512500
 print(frexp(16.4,5))
 ```
 
 ### ldexp(x, y)
 
-Return the power y of x times 2. (x * (2 ^ y))
+Calculates `x * 2^y` — effectively the inverse of `frexp`.
 
-```
+```ruby
 # Output: 6.00000
 print(ldexp(6,3))
 ```
 
-## Trigonometric functions
+## Trigonometric Functions
 
 ### sin(x)
 
-Return the sine of x.
+Returns the sine of `x`, where `x` is in radians.
 
 ### cos(x)
 
-Return the cosine of x.
+Returns the cosine of `x` (radians).
 
 ### tan(x)
 
-Return the tangent of x.
+Returns the tangent of `x` (radians).
 
 ### asin(x)
 
-Return the arc sine of x.
+Returns the angle whose sine is `x`.
 
 ### acos(x)
 
-Return the arc cosine of x.
+Returns the angle whose cosine is `x`.
 
 ### atan(x)
 
-Return the arc tangent of x.
+Returns the angle whose tangent is `x`.
 
 ### hypot(x, y)
 
-Return the `sqrt(x * x + y * y)`(Euclidean norm).
+Calculates the length of the hypotenuse: `sqrt(x² + y²)`.
 
-```
+```ruby
 # Output: 5
 print(hypot(3,4))
 ```
 
-## Hyperbolic functions
+## Hyperbolic Functions
 
 ### asinh(x)
 
-Return the inverse hyperbolic sine of x.
+Computes the inverse hyperbolic sine of `x`.
 
 ### acosh(x)
 
-Return the inverse hyperbolic cosine of x.
+Computes the inverse hyperbolic cosine of `x`.
 
 ### atanh(x)
 
-Return the inverse hyperbolic tangent of x.
+Computes the inverse hyperbolic tangent of `x`.
 
 ### cosh(x)
 
-Return the hyperbolic cosine of x.
+Returns the hyperbolic cosine of `x`.
 
 ### sinh(x)
 
-Return the hyperbolic sine of x.
+Returns the hyperbolic sine of `x`.
 
 ### tanh(x)
 
-Return the hyperbolic tangent of x.
+Returns the hyperbolic tangent of `x`.
 
-## logarithmic functions
+## Logarithmic Functions
 
 ### exp(x)
 
-Return e raised to the power x.
+Returns *e* raised to the power of `x`.
 
 ### log(x)
 
-Return the natural logarithm of x.
+Computes the natural logarithm (base *e*) of `x`.
 
 ### log2(x)
 
-Return the base-2 logarithm of x.
+Computes the base-2 logarithm of `x`.
 
 ### log10(x)
 
-Return the base-10 logarithm of x.
+Computes the base-10 logarithm of `x`.
 
-## Power functions
+## Power Functions
 
-### pow(x,y)
+### pow(x, y)
 
-Return x raised to the power y.
+Returns the result of raising `x` to the power of `y`.
 
-```
+```ruby
 # Output: 25
 print(pow(5,2))
 ```
 
 ### sqrt(x)
 
-Return the square root of x.
+Returns the square root of `x`.
 
-```
+```ruby
 # Output: 5
 print(sqrt(25))
 ```
