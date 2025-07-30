@@ -18,13 +18,13 @@ cd speakingstreem
 docker build --tag 'speakingstreem' .
 ```
 
-# Math Library
+## Math Library
 
 Streem includes a wide range of mathematical functions, inspired by those available in the C standard library.
 
-## Constants
+### Constants
 
-### PI
+#### PI
 
 Represents the mathematical constant π, accurate to the platform's precision.
 
@@ -33,7 +33,7 @@ Represents the mathematical constant π, accurate to the platform's precision.
 print(PI)
 ```
 
-### E
+#### E
 
 Represents Euler's number, *e*, used in many exponential and logarithmic calculations.
 
@@ -42,9 +42,9 @@ Represents Euler's number, *e*, used in many exponential and logarithmic calcula
 print(E)
 ```
 
-## Number-Theoretic and Numeric Functions
+### Number-Theoretic and Numeric Functions
 
-### ceil(x)
+#### ceil(x)
 
 Returns the smallest integer not less than `x`.
 
@@ -53,7 +53,7 @@ Returns the smallest integer not less than `x`.
 print(ceil(45.54))
 ```
 
-### fabs(x)
+#### fabs(x)
 
 Returns the non-negative value of `x`.
 
@@ -62,7 +62,7 @@ Returns the non-negative value of `x`.
 print(fabs(-2))
 ```
 
-### gcd(x, y)
+#### gcd(x, y)
 
 Computes the largest whole number that divides both `x` and `y`. Inputs must be integers.
 
@@ -71,7 +71,7 @@ Computes the largest whole number that divides both `x` and `y`. Inputs must be 
 print(gcd(4,10))
 ```
 
-### trunc(x)
+#### trunc(x)
 
 Cuts off the decimal part of `x`, leaving just the integer component.
 
@@ -80,11 +80,11 @@ Cuts off the decimal part of `x`, leaving just the integer component.
 print(trunc(9.13))
 ```
 
-### int(x)
+#### int(x)
 
 Alias for `trunc(x)` — returns the integer part of a number.
 
-### floor(x)
+#### floor(x)
 
 Returns the greatest integer less than or equal to `x`.
 
@@ -93,7 +93,7 @@ Returns the greatest integer less than or equal to `x`.
 print(floor(2.7))
 ```
 
-### round(x)
+#### round(x)
 
 Rounds `x` to the nearest integer.
 
@@ -102,7 +102,7 @@ Rounds `x` to the nearest integer.
 print(round(9.76))
 ```
 
-### frexp(x, y)
+#### frexp(x, y)
 
 Breaks down `x` into a normalized fraction and an exponent. The exponent is stored in `y`.
 
@@ -111,7 +111,7 @@ Breaks down `x` into a normalized fraction and an exponent. The exponent is stor
 print(frexp(16.4,5))
 ```
 
-### ldexp(x, y)
+#### ldexp(x, y)
 
 Calculates `x * 2^y` — effectively the inverse of `frexp`.
 
@@ -120,33 +120,33 @@ Calculates `x * 2^y` — effectively the inverse of `frexp`.
 print(ldexp(6,3))
 ```
 
-## Trigonometric Functions
+### Trigonometric Functions
 
-### sin(x)
+#### sin(x)
 
 Returns the sine of `x`, where `x` is in radians.
 
-### cos(x)
+#### cos(x)
 
 Returns the cosine of `x` (radians).
 
-### tan(x)
+#### tan(x)
 
 Returns the tangent of `x` (radians).
 
-### asin(x)
+#### asin(x)
 
 Returns the angle whose sine is `x`.
 
-### acos(x)
+#### acos(x)
 
 Returns the angle whose cosine is `x`.
 
-### atan(x)
+#### atan(x)
 
 Returns the angle whose tangent is `x`.
 
-### hypot(x, y)
+#### hypot(x, y)
 
 Calculates the length of the hypotenuse: `sqrt(x² + y²)`.
 
@@ -155,53 +155,53 @@ Calculates the length of the hypotenuse: `sqrt(x² + y²)`.
 print(hypot(3,4))
 ```
 
-## Hyperbolic Functions
+### Hyperbolic Functions
 
-### asinh(x)
+#### asinh(x)
 
 Computes the inverse hyperbolic sine of `x`.
 
-### acosh(x)
+#### acosh(x)
 
 Computes the inverse hyperbolic cosine of `x`.
 
-### atanh(x)
+#### atanh(x)
 
 Computes the inverse hyperbolic tangent of `x`.
 
-### cosh(x)
+#### cosh(x)
 
 Returns the hyperbolic cosine of `x`.
 
-### sinh(x)
+#### sinh(x)
 
 Returns the hyperbolic sine of `x`.
 
-### tanh(x)
+#### tanh(x)
 
 Returns the hyperbolic tangent of `x`.
 
-## Logarithmic Functions
+### Logarithmic Functions
 
-### exp(x)
+#### exp(x)
 
 Returns *e* raised to the power of `x`.
 
-### log(x)
+#### log(x)
 
 Computes the natural logarithm (base *e*) of `x`.
 
-### log2(x)
+#### log2(x)
 
 Computes the base-2 logarithm of `x`.
 
-### log10(x)
+#### log10(x)
 
 Computes the base-10 logarithm of `x`.
 
-## Power Functions
+### Power Functions
 
-### pow(x, y)
+#### pow(x, y)
 
 Returns the result of raising `x` to the power of `y`.
 
@@ -210,7 +210,7 @@ Returns the result of raising `x` to the power of `y`.
 print(pow(5,2))
 ```
 
-### sqrt(x)
+#### sqrt(x)
 
 Returns the square root of `x`.
 
