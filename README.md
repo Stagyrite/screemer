@@ -1,16 +1,10 @@
 # Screemer
 
-Screemer is a beginning of something that should end as a [Streem](https://github.com/matz/streem "matz/streem: prototype of stream based programming language") documentation project. 
+I speak [Streem](https://github.com/matz/streem "matz/streem: prototype of stream based programming language"), a prototype of a stream-based programming language. Screemer is a set of example programs in [Streem](https://github.com/matz/streem "matz/streem: prototype of stream based programming language") programming language. a beginning of something that should end as a [Streem](https://github.com/matz/streem "matz/streem: prototype of stream based programming language") documentation project. 
 
-## Examples
+## The Examples
 
-I speak [Streem](https://github.com/matz/streem "matz/streem: prototype of stream based programming language"), a prototype of a stream-based programming language.
-
-### Speaking Streem
-
-#### ./streem *.strm
-
-Run the examples with Docker.
+Run the examples with Docker to speak Streem.
 
 ```shell
 git clone https://github.com/Stagyrite/speakingstreem.git
@@ -18,7 +12,7 @@ cd speakingstreem
 docker build --tag 'speakingstreem' .
 ```
 
-## Math Library
+## Math Library Documentation
 
 Streem includes a wide range of mathematical functions, inspired by those available in the C standard library.
 
