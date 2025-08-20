@@ -16,7 +16,14 @@ docker build --tag 'speakingstreem' .
 
 ### Streaming bar graph
 
-Creates a streaming bar graph and fills it with numbers from the range 1 to 250.
+A trivial example that counts down from 3 to 0.
+
+```ruby
+graph = graph_bar()
+[3, 2, 1, 0] | graph
+```
+
+It fills it with numbers from the range 1 to 250.
 
 ```ruby
 graph = graph_bar()
