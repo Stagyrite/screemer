@@ -12,6 +12,17 @@ cd speakingstreem
 docker build --tag 'speakingstreem' .
 ```
 
+## Streem Library Documentation
+
+### Streaming bar graph
+
+Creates a streaming bar graph and fills it with numbers from the range 1 to 250.
+
+```ruby
+graph = graph_bar()
+seq(250) | graph
+```
+
 ## Math Library Documentation
 
 Streem includes a wide range of mathematical functions, inspired by those available in the C standard library.
