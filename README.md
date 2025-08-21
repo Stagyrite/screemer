@@ -20,8 +20,10 @@ docker build --tag 'speakingstreem' .
 | :---: | :---: |
 | "HELLO, world" | string |
 | 42 | integer |
+| [1,2,3] | array |
 | x -> x | function |
-| map | built-in function |
+| map, flatmap etc | built-in function |
+| stdin, stdout etc | file descriptor |
 
 ### Assigning a variable
 
@@ -48,6 +50,14 @@ s = "HELLO, " + name
 
 The s parameter's value is now "HELLO, world".
 
+### Array
+
+Arrays are one of the fundamental data types in Streem.
+
+```ruby
+x = ["HELLO,", "world"]
+```
+
 ## Streem Library Documentation
 
 ### Print
@@ -59,6 +69,25 @@ The print() function is used for printing to standard output, although there are
 s = "HELLO, world"
 print(s)
 ```
+
+### Standard I/O
+
+The 'stdin', 'stdout' and 'stderr' are file descriptors used for the standard I/O operations.
+
+### Stream
+
+Arrays are fundamental data types because they can be used with a streaming operator |.
+
+```ruby
+x = ["HELLO,", "world"]
+x | stdout
+
+# Output:
+# HELLO,
+# world
+```
+
+The 'stderr' file descriptor could have also been used in this example.
 
 ### Functions
 
