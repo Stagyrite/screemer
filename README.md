@@ -12,7 +12,67 @@ cd speakingstreem
 docker build --tag 'speakingstreem' .
 ```
 
+## Streem Language Documentation
+
+### Types
+
+| Value | Type |
+| :---: | :---: |
+| "HELLO, world" | string |
+| 42 | integer |
+| x -> x | function |
+| map | built-in function |
+
+### Assigning a variable
+
+Here's how to assign the 42 value to variable x.
+
+```ruby
+x = 42
+```
+
+Over here, we assign "HELLO, world" to a variable s.
+
+```ruby
+s = "HELLO, world"
+```
+
+### Concatenate strings
+
+Strings can be concatenated with the plus operator. Here's an example that can be part of a traditional Hello World program.
+
+```ruby
+name = "world"
+s = "HELLO, " + name
+```
+
+The s parameter's value is now "HELLO, world".
+
 ## Streem Library Documentation
+
+### Print
+
+The print() function is used for printing to standard output, although there are other methods as well.
+
+```ruby
+# Output: HELLO, world
+s = "HELLO, world"
+print(s)
+```
+
+### Functions
+
+Functions are defined within the curly brackets in a lambda-expression manner. Arguments are used, and the last expression is the return value.
+
+```ruby
+# Output: HELLO, world
+hello = { name ->
+	"HELLO, " + name
+}
+
+s = hello("world")
+print(s)
+```
 
 ### Streaming bar graph
 
