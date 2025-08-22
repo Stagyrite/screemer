@@ -33,6 +33,7 @@ All code comments are prefixed with a hash.
 | x -> x | function |
 | map, flatmap etc | built-in function |
 | stdin, stdout etc | file descriptor |
+| x \| y | x : stream |
 
 ### Assigning a variable
 
@@ -110,6 +111,36 @@ hello = { name ->
 
 s = hello("world")
 print(s)
+```
+
+### Built-in functions
+
+Stream contains a variety of built-in functions. Note that functions tend to return streams.
+
+### Reverse an array
+
+An array can be reversed using a 'reverse' function. Instead of a new array, a stream is created.
+
+```ruby
+x = [1, 2, 3]
+reverse(x) | stdout
+# Output:
+# 3
+# 2
+# 1
+```
+
+### Sequence of numbers
+
+To produce a sequence of numbers (1, 2, 3, ..., n) for a given n, call the 'seq' function.
+
+```ruby
+seq(3) | stdout
+
+# Output:
+# 1
+# 2
+# 3
 ```
 
 ### Streaming bar graph
