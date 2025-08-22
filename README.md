@@ -12,6 +12,9 @@ cd speakingstreem
 docker build --tag 'speakingstreem' .
 ```
 
+* [Fibonacci numbers](fibonacci.strm)
+* [Language versions (KVS demo)](languageVersions.strm)
+
 ## Streem Language Documentation
 
 ### Code comments
