@@ -89,7 +89,7 @@ The 'stdin', 'stdout' and 'stderr' are file descriptors used for the standard I/
 
 ### Stream
 
-Arrays are fundamental data types because they can be used with a streaming operator |.
+Arrays are fundamental data types. Their items are enclosed within square brackets. They can be used with a streaming operator \|.
 
 ```ruby
 x = ["HELLO,", "world"]
