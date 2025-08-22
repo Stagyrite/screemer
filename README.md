@@ -14,12 +14,21 @@ docker build --tag 'speakingstreem' .
 
 ## Streem Language Documentation
 
+### Code comments
+
+All code comments are prefixed with a hash.
+
+```ruby
+# minimal program
+```
+
 ### Types
 
 | Value | Type |
 | :---: | :---: |
 | "HELLO, world" | string |
 | 42 | integer |
+| 4.2 | float |
 | [1,2,3] | array |
 | x -> x | function |
 | map, flatmap etc | built-in function |
